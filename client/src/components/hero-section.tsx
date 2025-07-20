@@ -80,17 +80,11 @@ export default function HeroSection() {
             <div className="relative">
               {/* Profile Photo */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center rounded-2xl">
-                  {/* Placeholder for profile photo - user can replace this */}
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                      <span className="text-4xl font-bold text-white">US</span>
-                    </div>
-                    <p className="text-slate-600 text-sm">
-                      Upload your profile photo here
-                    </p>
-                  </div>
-                </div>
+                <img
+                  src="/profile-photo.jpg"
+                  alt="Umar Shabbir - Game Developer & AI Engineer"
+                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl"
+                />
               </div>
               
               {/* Floating Tech Icons */}
