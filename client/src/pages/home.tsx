@@ -1,4 +1,5 @@
 import HeroSection from "@/components/hero-section";
+import SkillsSection from "@/components/skills-section";
 import { useQuery } from "@tanstack/react-query";
 import { Project } from "@shared/schema";
 import ProjectCard from "@/components/project-card";
@@ -14,6 +15,9 @@ export default function Home() {
   return (
     <div className="pt-16">
       <HeroSection />
+      
+      {/* Skills Section */}
+      <SkillsSection />
       
       {/* Featured Projects Section */}
       <section className="py-20 bg-white">

@@ -75,16 +75,22 @@ export default function HeroSection() {
             </div>
           </div>
           
-          {/* Hero Image */}
+          {/* Profile Photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Main Image */}
+              {/* Profile Photo */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Modern developer workspace with multiple monitors showing code and 3D models"
-                  className="w-full max-w-lg animate-pulse"
-                />
+                <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center rounded-2xl">
+                  {/* Placeholder for profile photo - user can replace this */}
+                  <div className="text-center">
+                    <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                      <span className="text-4xl font-bold text-white">US</span>
+                    </div>
+                    <p className="text-slate-600 text-sm">
+                      Upload your profile photo here
+                    </p>
+                  </div>
+                </div>
               </div>
               
               {/* Floating Tech Icons */}
