@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
 import { Project } from "@shared/schema";
 import ProjectCard from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { getProjectsByCategory } from "@/lib/static-data";
 
 const categories = [
   { id: "all", label: "All Projects" },
@@ -15,9 +15,8 @@ const categories = [
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("all");
   
-  const { data: projects = [], isLoading } = useQuery<Project[]>({
-    queryKey: ["/api/projects", activeCategory !== "all" ? `?category=${activeCategory}` : ""],
-  });
+  const projects = getProjectsByCategory(activeCategory);
+  const isLoading = false;
 
   return (
     <div className="pt-32 pb-20 bg-slate-50">

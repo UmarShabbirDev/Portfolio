@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -27,11 +25,13 @@ import {
   Twitter
 } from "lucide-react";
 import { z } from "zod";
+import { submitContactForm } from "@/lib/static-data";
 
 type ContactFormData = z.infer<typeof insertContactSchema>;
 
 export default function Contact() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(insertContactSchema),
@@ -43,28 +43,28 @@ export default function Contact() {
     },
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      form.reset();
-    },
-    onError: () => {
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    try {
+      const result = await submitContactForm(data);
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: result.message,
+        });
+        form.reset();
+      } else {
+        throw new Error(result.message);
+      }
+    } catch (error) {
       toast({
         title: "Failed to send message",
         description: "Please try again or contact me directly via email.",
         variant: "destructive",
       });
-    },
-  });
-
-  const onSubmit = (data: ContactFormData) => {
-    contactMutation.mutate(data);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -265,9 +265,9 @@ export default function Contact() {
                   <Button 
                     type="submit" 
                     className="w-full bg-blue-600 hover:bg-blue-700 h-12"
-                    disabled={contactMutation.isPending}
+                    disabled={isSubmitting}
                   >
-                    {contactMutation.isPending ? (
+                    {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
                         Sending...

@@ -14,7 +14,8 @@ import {
 
 export default function Resume() {
   const handleDownload = () => {
-    window.open("/api/resume/download", "_blank");
+    // For static sites, link directly to the PDF file
+    window.open("/UmarShabbir_Resume.pdf", "_blank");
   };
 
   return (

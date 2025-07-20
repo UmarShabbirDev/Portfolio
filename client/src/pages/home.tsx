@@ -1,16 +1,15 @@
 import HeroSection from "@/components/hero-section";
 import SkillsSection from "@/components/skills-section";
-import { useQuery } from "@tanstack/react-query";
 import { Project } from "@shared/schema";
 import ProjectCard from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Rocket } from "lucide-react";
+import { getFeaturedProjects } from "@/lib/static-data";
 
 export default function Home() {
-  const { data: featuredProjects = [], isLoading } = useQuery<Project[]>({
-    queryKey: ["/api/projects?featured=true"],
-  });
+  const featuredProjects = getFeaturedProjects();
+  const isLoading = false;
 
   return (
     <div className="pt-16">

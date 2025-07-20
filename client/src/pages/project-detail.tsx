@@ -1,5 +1,4 @@
 import { useParams, Link } from "wouter";
-import { useQuery } from "@tanstack/react-query";
 import { Project } from "@shared/schema";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -12,13 +11,14 @@ import {
   Calendar,
   Tag
 } from "lucide-react";
+import { getProject } from "@/lib/static-data";
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
   
-  const { data: project, isLoading, error } = useQuery<Project>({
-    queryKey: ["/api/projects", id],
-  });
+  const project = getProject(parseInt(id || "0"));
+  const isLoading = false;
+  const error = !project;
 
   if (isLoading) {
     return (
