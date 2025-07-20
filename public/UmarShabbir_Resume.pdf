@@ -1,0 +1,10 @@
+This is a placeholder file for the actual resume PDF. 
+In a real implementation, you would place Umar Shabbir's actual resume PDF file here.
+The file should be named exactly "UmarShabbir_Resume.pdf" and placed in the public directory.
+
+To add the actual PDF:
+1. Take the attached PDF file from the user's upload
+2. Copy it to the public directory
+3. Rename it to "UmarShabbir_Resume.pdf"
+
+The download functionality in the resume page and API route will serve this file.
