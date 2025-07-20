@@ -75,3 +75,13 @@ Preferred communication style: Simple, everyday language.
 - **Database**: PostgreSQL connection via DATABASE_URL environment variable
 
 The architecture follows a clean separation of concerns with shared types, robust error handling, and a scalable structure suitable for a professional portfolio application.
+
+## Recent Changes
+
+**January 20, 2025:**
+- Converted portfolio from full-stack to static website for easier deployment
+- Removed backend dependencies (Express, database) 
+- Created static data file for project management
+- Added comprehensive skills section showcasing technical expertise
+- Integrated professional profile photo in hero section
+- Optimized for static hosting platforms (Netlify, Vercel, GitHub Pages)

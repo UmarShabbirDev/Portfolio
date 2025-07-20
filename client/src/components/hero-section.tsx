@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { ArrowRight, Mail, Rocket } from "lucide-react";
+import profilePhoto from "@assets/IMG_6365_enhanced.jpeg_1753025166230.jpg";
 
 export default function HeroSection() {
   const techStack = [
@@ -81,7 +82,7 @@ export default function HeroSection() {
               {/* Profile Photo */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/profile-photo.jpg"
+                  src={profilePhoto}
                   alt="Umar Shabbir - Game Developer & AI Engineer"
                   className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl"
                 />
