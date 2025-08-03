@@ -7,11 +7,11 @@ export const staticProjects: Project[] = [
     title: "AnchorPoint AR",
     description: "Unity-based system that scans spatial meshes and anchors virtual objects to real world positions with persistent placement across sessions using AR Foundation, ARKit/ARCore, and XR Toolkit.",
     category: "ar-vr",
-    technologies: ["Unity3D", "ARKit", "ARCore", "Addressables", "XR Toolkit"],
+    technologies: ["Unity3D", "ARKit", "ARCore", "AR Foundation", "XR Toolkit", "C#"],
     thumbnail: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/UmarShabbirDev/AnchorPoint-AR",
     featured: true,
   },
   {
@@ -74,6 +74,32 @@ export const staticProjects: Project[] = [
     githubUrl: "#",
     featured: true,
   },
+  {
+    id: 7,
+    title: "Solitaire",
+    description: "Classic Klondike Solitaire with customizable themes, hints, undo, and smooth real-time gameplay. Built to provide a relaxing card experience with rich UI and performance optimization.",
+    category: "2d",
+    technologies: ["Unity2D", "C#", "Game UI/UX", "Mobile Optimization", "App Store Deployment"],
+    thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with gameplay trailer if available
+    demoUrl: "https://apps.apple.com/us/app/solitaire/id1605913010",
+    githubUrl: "#", // Set to repo if available, or leave as "#"
+    featured: true
+  },
+
+  {
+    id: 8,
+    title: "Solitaire Up",
+    description: "Embark on a world tour with Klondike Solitaire in this level-based game featuring over 125 levels, daily events, power-ups, offline play, and beautifully designed card themes.",
+    category: "2d",
+    technologies: ["Unity2D", "C#", "Level Progression System", "Mobile Optimization", "App Store Deployment"],
+    thumbnail: "https://images.unsplash.com/photo-1598550880865-34efcb0d1788?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500", // Replace with actual screenshot if preferred
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with real gameplay trailer
+    demoUrl: "https://apps.apple.com/us/app/solitaire-up-classic-card-game/id6447605857",
+    githubUrl: "#", // No public repo found
+    featured: true
+  },
+
 ];
 
 // Static helper functions
