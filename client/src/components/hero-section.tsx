@@ -76,7 +76,7 @@ export default function HeroSection() {
             </div>
           </div>
           
-          {/* Profile Photo 
+          {/* Profile Photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Profile Photo 
