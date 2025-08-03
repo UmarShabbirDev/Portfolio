@@ -76,17 +76,17 @@ export default function HeroSection() {
             </div>
           </div>
           
-          {/* Profile Photo */}
+          {/* Profile Photo 
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Profile Photo */}
+              {/* Profile Photo 
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src={profilePhoto}
                   alt="Umar Shabbir - Game Developer & AI Engineer"
                   className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl"
                 />
-              </div>
+              </div>*/}
               
               {/* Floating Tech Icons */}
               <div className="absolute -top-4 -left-4 bg-blue-600 text-white p-3 rounded-lg shadow-lg animate-bounce">
