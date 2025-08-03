@@ -98,6 +98,7 @@ export default function Footer() {
               © {currentYear} Umar Shabbir. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-slate-400">
+              <span>Made with ❤️ in Berlin</span>
               <span>•</span>
               <span>Available for freelance work</span>
             </div>
