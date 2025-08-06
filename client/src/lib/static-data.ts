@@ -21,7 +21,7 @@ export const staticProjects: Project[] = [
     description: "Multiplayer fantasy game featuring ECS architecture, dynamic content loading with Addressables, and Photon networking integration with backend API integration.",
     category: "3d",
     technologies: ["Unity3D", "Photon", "ECS", "Multiplayer", "Firebase"],
-    thumbnail: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    thumbnail: "@assets/dark.jpg",
     videoUrl: "https://youtu.be/UVMhHOGvFRU",
     demoUrl: "https://build.darktaverns.com/",
     githubUrl: "#",

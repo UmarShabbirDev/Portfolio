@@ -27,10 +27,10 @@ export default function HeroSection() {
                 </span>
               </h1>
               <h2 className="text-xl lg:text-2xl text-slate-600 mb-6 font-medium">
-                Game Developer & AI Engineer
+                Unity XR Developer
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                Software Engineer pursuing Master's in Artificial Intelligence, with 3+ years 
+                Unity XR Developer pursuing Master's in Artificial Intelligence, with 3+ years 
                 of hands-on experience in Unity development, gameplay programming, multiplayer 
                 systems, and XR technologies including VR, AR, and MR.
               </p>
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src={profilePhoto}
-                  alt="Umar Shabbir - Game Developer & AI Engineer"
+                  alt="Umar Shabbir - Unity XR Developer"
                   className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl"
                 />
               </div>}
