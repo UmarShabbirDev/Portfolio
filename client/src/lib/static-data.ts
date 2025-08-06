@@ -12,6 +12,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "https://github.com/UmarShabbirDev/AnchorPoint-AR",
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: true,
   },
   {
@@ -24,6 +25,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "#",
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: true,
   },
   {
@@ -36,6 +38,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "#",
+    keyfeatures:  ['Advanced technical implementation witsdsdsh moder','sdsdsd'],
     featured: true,
   },
   {
@@ -48,6 +51,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "#",
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: false,
   },
   {
@@ -60,6 +64,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "#",
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: false,
   },
   {
@@ -72,6 +77,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     demoUrl: "#",
     githubUrl: "#",
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: true,
   },
   {
@@ -84,6 +90,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with gameplay trailer if available
     demoUrl: "https://apps.apple.com/us/app/solitaire/id1605913010",
     githubUrl: "#", // Set to repo if available, or leave as "#"
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: true
   },
 
@@ -97,6 +104,7 @@ export const staticProjects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with real gameplay trailer
     demoUrl: "https://apps.apple.com/us/app/solitaire-up-classic-card-game/id6447605857",
     githubUrl: "#", // No public repo found
+    keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: true
   },
 

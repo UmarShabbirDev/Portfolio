@@ -12,6 +12,7 @@ export const projects = pgTable("projects", {
   videoUrl: text("video_url"),
   demoUrl: text("demo_url"),
   githubUrl: text("github_url"),
+  keyfeatures: text("keyfeatures").array().notNull(), 
   featured: boolean("featured").default(false),
 });
 

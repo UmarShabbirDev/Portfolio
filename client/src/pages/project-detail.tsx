@@ -162,22 +162,12 @@ export default function ProjectDetail() {
                   Key Features
                 </h4>
                 <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Advanced technical implementation with modern frameworks
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Optimized performance and scalable architecture
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Cross-platform compatibility and responsive design
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Comprehensive testing and quality assurance
-                  </li>
+                  {project.keyfeatures.map((feature, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        {feature}
+                      </li>
+                  ))}
                 </ul>
               </CardContent>
             </Card>
