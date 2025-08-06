@@ -49,7 +49,7 @@ export const staticProjects: Project[] = [
     technologies: ["Unity2D", "C#", "Addressables", "Spine", "Animation", "WebGL"],
     thumbnail: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
     videoUrl: "https://youtu.be/1y2quiAKOAY",
-    demoUrl: "#",
+    demoUrl: "https://www.kickstarter.com/projects/theawkwardyeti/heart-and-brain-the-video-game",
     githubUrl: "#",
     keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
     featured: false,
@@ -61,7 +61,7 @@ export const staticProjects: Project[] = [
     category: "2d",
     technologies: ["Unity2D", "Puzzle", "Backend", "In-App Purchasing", "Mobile Scripting"],
     thumbnail: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://youtu.be/Iqr3XIhSnUQ",
     demoUrl: "https://apps.apple.com/us/app/words-connections-word-game/id6465991134",
     githubUrl: "#",
     keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
@@ -74,7 +74,7 @@ export const staticProjects: Project[] = [
     category: "2d",
     technologies: ["Unity2D", "C#", "Game UI/UX", "Mobile Optimization", "App Store Deployment"],
     thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with gameplay trailer if available
+    videoUrl: "https://youtu.be/Iqr3XIhSnUQ", // Replace with gameplay trailer if available
     demoUrl: "https://apps.apple.com/us/app/solitaire/id1605913010",
     githubUrl: "#", // Set to repo if available, or leave as "#"
     keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
@@ -88,7 +88,7 @@ export const staticProjects: Project[] = [
     category: "2d",
     technologies: ["Unity2D", "C#", "Level Progression System", "Mobile Optimization", "App Store Deployment"],
     thumbnail: "https://images.unsplash.com/photo-1598550880865-34efcb0d1788?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500", // Replace with actual screenshot if preferred
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with real gameplay trailer
+    videoUrl: "https://youtu.be/Iqr3XIhSnUQ", // Replace with real gameplay trailer
     demoUrl: "https://apps.apple.com/us/app/solitaire-up-classic-card-game/id6447605857",
     githubUrl: "#", // No public repo found
     keyfeatures:  ['Advanced technical implementation with moder','sdsdsd'],
